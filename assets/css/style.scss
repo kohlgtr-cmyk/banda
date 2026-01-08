@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+@import '../css/partials/colors';
+@import '../css/partials/header';
+@import '../css/partials/layout';
+
+
+body {
+    background-color: $fundo;
+}
+
+.border {
+    border-color: $text;
+    border: 2px;
+}
+.container {
+    width: 100%;
+}
+
+/*Centro*/
+
+
+/*Footer*/
+
+footer {
+    img {
+        width: 250px;
+        align-items: center;
+        opacity: 0.5;
+        -webkit-mask-image: radial-gradient(circle, black 40%, transparent 80%);
+        mask-image: radial-gradient(circle, black 40%, transparent 80%);
+    
+    }
+    i {
+        color: $text;
+        margin: 0 10px;
+        font-size: 24px;
+        &:hover {
+            color: $laranja-dourado;
+            animation: scaleIcon 0.5s forwards;
+            border: 0px;
+            background-color: $fundo;
+        }
+    }
+}
+@keyframes scaleIcon {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}

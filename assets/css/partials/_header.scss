@@ -1,0 +1,88 @@
+
+header {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 90vh;
+    padding: 30px 25px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 90%;
+        z-index: -1;
+        background-image: linear-gradient(to bottom, rgba(6,18,30,0.1), $fundo), url("/assets/img/Studio.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        opacity: 0.9;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+       
+
+    }   
+}
+.header-content {
+    display: flex;              
+    align-items: center;        
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 2px solid $laranja-dourado;
+    }
+
+.header-menu {
+    display: flex;          /* transforma a lista em linha */
+    gap: 24px;              /* espaço entre os itens */
+    list-style: none;       /* remove bolinhas */
+    padding: 0;
+    
+
+};
+.header-logo h2 {
+    transform: scale(1);
+    
+}
+
+.header-logo h2:hover {
+    transform: scale(1.35);
+    transition: 0.8s;
+}
+
+.a {
+    text-decoration: none;
+    color: $laranja-dourado;
+    font-weight: 500;
+    font-size: 18px;
+    &:hover {
+        color: $laranja-dourado;
+        transition: color 0.8s;
+        animation: hoverEffect 1s forwards;
+    }
+}
+@keyframes hoverEffect {
+    from {
+        border: 0px;
+        padding: 0px;
+    }
+    to {
+        border: 2px solid $text;
+        background-color: $fundo-claro;
+    
+        padding: 5px;
+        color: $laranja-dourado;
+        border-radius: 12px;
+    }
+}
+
+.header-content {
+    color: $laranja-dourado;
+}
