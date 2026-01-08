@@ -91,6 +91,7 @@ header::after {
 
 .members {
   max-width: 100%;
+  color: #F1D6A3;
 }
 .members h2 {
   text-align: center;
@@ -114,11 +115,11 @@ header::after {
   text-align: center;
   padding-bottom: 10px;
   min-width: 250px;
-  max-width: 350px;
+  max-width: 550px;
   display: flex;
   background-color: transparent;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.5);
 }
@@ -141,7 +142,51 @@ header::after {
   transition: 1s;
 }
 
-.od .trace .ember .dusk .info {
+.od:hover {
+  box-shadow: 0 0 20px #1fbf6a, 0 0 40px #39ff88, 0 0 60px #7dffb3, 0 0 80px #1fbf6a, 0 20px 40px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+  transform: scale(1.1);
+  transition: 1s;
+}
+.od:hover p {
+  color: #39ff88;
+  transition: 1s;
+}
+
+.trace:hover {
+  box-shadow: 0 0 20px #8a93a3, 0 0 40px #f5f7fa, 0 0 60px #cfd6e0, 0 0 80px #8a93a3, 0 20px 40px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+  transform: scale(1.1);
+  transition: 1s;
+}
+.trace:hover p {
+  color: #f5f7fa;
+  transition: 1s;
+}
+
+.ember:hover {
+  box-shadow: 0 0 20px #a8906b, 0 0 40px #c9b08a, 0 0 60px #e1c9a3, 0 0 80px #a8906b, 0 20px 40px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+  transform: scale(1.1);
+  transition: 1s;
+}
+.ember:hover p {
+  color: #c9b08a;
+  transition: 1s;
+}
+
+.dusk:hover {
+  box-shadow: 0 0 20px #6a3529, 0 0 40px #8a4b3a, 0 0 60px #a96350, 0 0 80px #6a3529, 0 20px 40px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+  transform: scale(1.1);
+  transition: 1s;
+}
+.dusk:hover p {
+  color: #a96350;
+  transition: 1s;
+}
+
+.info {
   text-align: center;
   min-width: none;
   max-width: 350px;
@@ -150,7 +195,7 @@ header::after {
   justify-content: space-between;
   padding: 14px;
 }
-.od .trace .ember .dusk .info button {
+.info button {
   margin-top: 10px;
   padding: 8px;
   background-color: #E29A4A;

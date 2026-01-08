@@ -1,6 +1,6 @@
 .members {
     max-width: 100%;
-    
+    color: $text;
     h2 {
         text-align: center;
         color: $text;
@@ -23,11 +23,11 @@
     text-align: center;
     padding-bottom: 10px;
     min-width: 250px;
-    max-width: 350px;
+    max-width: 550px;
     display: flex;
     background-color: transparent;
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
     box-shadow: 0px -1px 17px -4px rgba(0,0,0,0.5);
     
@@ -57,10 +57,70 @@
             transition: 1s;
         }
     }
-.od
-.trace
-.ember
-.dusk
+.od:hover {
+        box-shadow: 
+            0 0 20px $hair-green-dark,
+            0 0 40px $hair-green-main,
+            0 0 60px $hair-green-light,
+            0 0 80px $hair-green-dark,
+            0 20px 40px rgba(0, 0, 0, 0.5);
+        transform: translateY(-5px);
+        transform: scale(1.1);
+        transition: 1s;
+        
+        p {
+            color: $hair-green-main;
+            transition: 1s;
+        }
+    }
+.trace:hover {
+        box-shadow: 
+            0 0 20px $hair-brown-dark,
+            0 0 40px $hair-brown-main,
+            0 0 60px $hair-brown-light,
+            0 0 80px $hair-brown-dark,
+            0 20px 40px rgba(0, 0, 0, 0.5);
+        transform: translateY(-5px);
+        transform: scale(1.1);
+        transition: 1s;
+        
+        p {
+            color: $hair-brown-main;
+            transition: 1s;
+        }
+    }
+.ember:hover {
+        box-shadow: 
+            0 0 20px $hair-blonde-dark,
+            0 0 40px $hair-blonde-main,
+            0 0 60px $hair-blonde-light,
+            0 0 80px $hair-blonde-dark,
+            0 20px 40px rgba(0, 0, 0, 0.5);
+        transform: translateY(-5px);
+        transform: scale(1.1);
+        transition: 1s;
+        
+        p {
+            color: $hair-blonde-main;
+            transition: 1s;
+        }
+    }
+.dusk:hover {
+        box-shadow: 
+            0 0 20px $hair-red-dark,
+            0 0 40px $hair-red-main,
+            0 0 60px $hair-red-light,
+            0 0 80px $hair-red-dark,
+            0 20px 40px rgba(0, 0, 0, 0.5);
+        transform: translateY(-5px);
+        transform: scale(1.1);
+        transition: 1s;
+        
+        p {
+            color: $hair-red-light;
+            transition: 1s;
+        }
+    }
 
 .info {
     text-align: center;
