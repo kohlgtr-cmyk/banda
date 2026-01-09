@@ -91,13 +91,13 @@ header::after {
 @media screen and (max-width: 768px) {
   .a {
     text-decoration: none;
-    color: #E29A4A;
+    color: #C87432;
     font-weight: 150%;
     font-size: 15px;
   }
   .header-menu {
     display: flex; /* transforma a lista em linha */
-    gap: auto; /* espaço entre os itens */
+    gap: 2px; /* espaço entre os itens */
     list-style: none; /* remove bolinhas */
     padding: 0;
   }
