@@ -33,7 +33,6 @@ header {
 }
 .header-content {
     display: flex;              
-    align-items: center;        
     justify-content: space-between;
     padding-bottom: 20px;
     border-bottom: 2px solid $laranja-dourado;
@@ -88,11 +87,22 @@ header {
     color: $laranja-dourado;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
     .a {
     text-decoration: none;
     color: $laranja-dourado;
     font-weight: 150%;
     font-size: 15px;
     }
+    .header-menu {
+    display: flex;          /* transforma a lista em linha */
+    gap: auto;              /* espaço entre os itens */
+    list-style: none;       /* remove bolinhas */
+    padding: 0;
+    .header-logo h2:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+}
 }
