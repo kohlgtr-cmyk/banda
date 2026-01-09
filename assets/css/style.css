@@ -222,6 +222,29 @@ header::after {
   cursor: pointer;
 }
 
+.page {
+  color: #F1D6A3;
+  line-height: 200%;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 18px;
+}
+
+.About {
+  text-align: center;
+  color: #F1D6A3;
+  line-height: 150%;
+  padding: 12px 50px;
+  font-size: 18px;
+}
+.About h1 {
+  padding: 20px;
+}
+
+.band img {
+  width: 100%;
+}
+
 body {
   background-color: #1f2a2e;
 }

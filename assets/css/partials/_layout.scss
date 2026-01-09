@@ -142,3 +142,28 @@
         cursor: pointer;
     }
 }
+
+.page {
+    color: $text;
+    line-height: 200%;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 18px;
+
+}
+.About {
+    text-align: center;
+    color: $text;
+    line-height: 150%;
+    padding: 12px 50px;
+    font-size: 18px;
+    h1 {
+        padding: 20px;
+    }
+}
+.band {
+    img {
+        width: 100%;
+    }
+}
+
