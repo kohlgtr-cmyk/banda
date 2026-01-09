@@ -97,7 +97,7 @@ header::after {
   }
   .header-menu {
     display: flex; /* transforma a lista em linha */
-    gap: 2px; /* espaço entre os itens */
+    gap: 5px; /* espaço entre os itens */
     list-style: none; /* remove bolinhas */
     padding: 0;
   }
