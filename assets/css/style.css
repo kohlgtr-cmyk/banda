@@ -292,7 +292,7 @@ footer i:hover {
 .modal {
   display: none;
   position: fixed;
-  z-index: 9999; /* aumentado */
+  z-index: 9999;
   left: 0;
   top: 0;
   width: 100%;
@@ -339,25 +339,25 @@ footer i:hover {
 
 .modal-content-trace {
   position: relative;
-  background-color: #2B2623;
+  background-color: #1F1C1A;
   margin: 5% auto;
   padding: 0;
   width: 80%;
   max-width: 900px;
   border-radius: 12px;
-  box-shadow: 0 0 20px #E29A4A, 0 0 40px #C87432;
+  box-shadow: 0 0 20px #8a93a3, 0 0 40px #f5f7fa, 0 0 60px #cfd6e0;
   animation: slideIn 0.4s;
 }
 
 .modal-content-od {
   position: relative;
-  background-color: #2B2623;
+  background-color: #252822;
   margin: 5% auto;
   padding: 0;
   width: 80%;
   max-width: 900px;
   border-radius: 12px;
-  box-shadow: 0 0 20px #E29A4A, 0 0 40px #C87432;
+  box-shadow: 0 0 20px #1fbf6a, 0 0 40px #39ff88, 0 0 60px #7dffb3;
   animation: slideIn 0.4s;
 }
 
@@ -375,36 +375,180 @@ footer i:hover {
      object-fit: cover;
 }
 
-.modal-info {
+.modal-info-trace {
   flex: 1;
 }
-.modal-info h2 {
+.modal-info-trace h2 {
+  color: #cfd6e0;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.modal-info-trace h3 {
+  color: #f5f7fa;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.modal-info-trace p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #8a93a3;
+}
+.modal-info-trace h4 {
+  color: #f5f7fa;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.modal-info-trace ul {
+  list-style: none;
+  padding-left: 0;
+}
+.modal-info-trace ul li {
+  padding: 5px 0;
+  color: #8a93a3;
+}
+.modal-info-trace ul li::before {
+  content: "▸ ";
+  color: #f5f7fa;
+}
+
+.modal-info-od {
+  flex: 1;
+}
+.modal-info-od h2 {
+  color: #7dffb3;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.modal-info-od h3 {
+  color: #39ff88;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.modal-info-od p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #1fbf6a;
+}
+.modal-info-od h4 {
+  color: #39ff88;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.modal-info-od ul {
+  list-style: none;
+  padding-left: 0;
+}
+.modal-info-od ul li {
+  padding: 5px 0;
+  color: #1fbf6a;
+}
+.modal-info-od ul li::before {
+  content: "▸ ";
+  color: #E29A4A;
+}
+
+.modal-info-ember {
+  flex: 1;
+}
+.modal-info-ember h2 {
+  color: #e1c9a3;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.modal-info-ember h3 {
+  color: #c9b08a;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.modal-info-ember p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #a8906b;
+}
+.modal-info-ember h4 {
+  color: #c9b08a;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.modal-info-ember ul {
+  list-style: none;
+  padding-left: 0;
+}
+.modal-info-ember ul li {
+  padding: 5px 0;
+  color: #a8906b;
+}
+.modal-info-ember ul li::before {
+  content: "▸ ";
+  color: #c9b08a;
+}
+
+.modal-info-lyra {
+  flex: 1;
+}
+.modal-info-lyra h2 {
+  color: #4bb0c1;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.modal-info-lyra h3 {
+  color: #2a8fa1;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.modal-info-lyra p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #1f6a76;
+}
+.modal-info-lyra h4 {
+  color: #2a8fa1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.modal-info-lyra ul {
+  list-style: none;
+  padding-left: 0;
+}
+.modal-info-lyra ul li {
+  padding: 5px 0;
+  color: #1f6a76;
+}
+.modal-info-lyra ul li::before {
+  content: "▸ ";
+  color: #2a8fa1;
+}
+
+.modal-info-dusk {
+  flex: 1;
+}
+.modal-info-dusk h2 {
   color: #E29A4A;
   font-size: 32px;
   margin-bottom: 10px;
 }
-.modal-info h3 {
+.modal-info-dusk h3 {
   color: #C87432;
   font-size: 20px;
   margin-bottom: 20px;
 }
-.modal-info p {
+.modal-info-dusk p {
   line-height: 1.8;
   margin-bottom: 20px;
 }
-.modal-info h4 {
+.modal-info-dusk h4 {
   color: #E29A4A;
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.modal-info ul {
+.modal-info-dusk ul {
   list-style: none;
   padding-left: 0;
 }
-.modal-info ul li {
+.modal-info-dusk ul li {
   padding: 5px 0;
 }
-.modal-info ul li::before {
+.modal-info-dusk ul li::before {
   content: "▸ ";
   color: #E29A4A;
 }

@@ -60,7 +60,7 @@ footer {
 .modal {
     display: none;
     position: fixed;
-    z-index: 9999; /* aumentado */
+    z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
@@ -113,28 +113,30 @@ footer {
 }    
 .modal-content-trace {
     position: relative;
-    background-color: $marrom-escuro;
+    background-color: $bg-brown;
     margin: 5% auto;
     padding: 0;
     width: 80%;
     max-width: 900px;
     border-radius: 12px;
     box-shadow: 
-        0 0 20px $laranja-dourado,
-        0 0 40px $laranja-queimado;
+        0 0 20px $hair-brown-dark,
+        0 0 40px $hair-brown-main,
+        0 0 60px $hair-brown-light;
     animation: slideIn 0.4s;
 }
 .modal-content-od {
     position: relative;
-    background-color: $marrom-escuro;
+    background-color: $bg-green;
     margin: 5% auto;
     padding: 0;
     width: 80%;
     max-width: 900px;
     border-radius: 12px;
     box-shadow: 
-        0 0 20px $laranja-dourado,
-        0 0 40px $laranja-queimado;
+        0 0 20px $hair-green-dark,
+        0 0 40px $hair-green-main,
+        0 0 60px $hair-green-light;
     animation: slideIn 0.4s;
 }
 
@@ -152,7 +154,175 @@ footer {
     }
 }
 
-.modal-info {
+.modal-info-trace {
+    flex: 1;
+    
+    h2 {
+        color: $hair-brown-light;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    h3 {
+        color: $hair-brown-main;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        line-height: 1.8;
+        margin-bottom: 20px;
+        color: $hair-brown-dark;
+    }
+    
+    h4 {
+        color: $hair-brown-main;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    ul {
+        list-style: none;
+        padding-left: 0;
+        
+        li {
+            padding: 5px 0;
+            color: $hair-brown-dark;
+            
+            &::before {
+                content: "▸ ";
+                color: $hair-brown-main;
+            }
+        }
+    }
+}
+.modal-info-od {
+    flex: 1;
+    
+    h2 {
+        color: $hair-green-light;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    h3 {
+        color: $hair-green-main;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        line-height: 1.8;
+        margin-bottom: 20px;
+        color: $hair-green-dark;
+    }
+    
+    h4 {
+        color: $hair-green-main;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    ul {
+        list-style: none;
+        padding-left: 0;
+        
+        li {
+            padding: 5px 0;
+            color: $hair-green-dark;
+
+            &::before {
+                content: "▸ ";
+                color: $laranja-dourado;
+            }
+        }
+    }
+}
+    .modal-info-ember {
+    flex: 1;
+    
+    h2 {
+        color: $hair-blonde-light;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    h3 {
+        color: $hair-blonde-main;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        line-height: 1.8;
+        margin-bottom: 20px;
+        color: $hair-blonde-dark;
+    }
+    
+    h4 {
+        color: $hair-blonde-main;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    ul {
+        list-style: none;
+        padding-left: 0;
+        
+        li {
+            padding: 5px 0;
+            color: $hair-blonde-dark;
+            
+            &::before {
+                content: "▸ ";
+                color: $hair-blonde-main;
+            }
+        }
+    }
+}
+.modal-info-lyra {
+    flex: 1;
+    
+    h2 {
+        color: $hair-blue-light;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    h3 {
+        color: $hair-blue-main;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        line-height: 1.8;
+        margin-bottom: 20px;
+        color: $hair-blue-dark;
+    }
+    
+    h4 {
+        color: $hair-blue-main;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    ul {
+        list-style: none;
+        padding-left: 0;
+        
+        li {
+            padding: 5px 0;
+            color: $hair-blue-dark;
+            
+            &::before {
+                content: "▸ ";
+                color: $hair-blue-main;
+            }
+        }
+    }
+}
+.modal-info-dusk {
     flex: 1;
     
     h2 {
@@ -192,7 +362,6 @@ footer {
         }
     }
 }
-
 .close {
     position: absolute;
     right: 20px;
