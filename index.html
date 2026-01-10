@@ -14,7 +14,6 @@
         
     </head>
     <body>
-        <div>
            <header>
   <nav class="header-content container">
     <div class="header-logo">
@@ -53,41 +52,39 @@
                 <div class="members">
                     <h2>Members</h2>
                      <section class="full-band">
-                <div class="trace" data-aos="fade-up" data-aos-delay="550">
+                <div class="trace" data-aos="fade-up" data-aos-delay="550" onclick="openModal('modal-trace')">
                     <img src="/assets/img/trace-sofa.jpg" alt="Trace"/>
                 <div class="info">
               <p><strong>Trace</strong> - Vocal/Guitar</p>
+          
             </div>
           </div>
-              <div class="od" data-aos="fade-up" data-aos-delay="450">
+              <div class="od" data-aos="fade-up" data-aos-delay="450" onclick="openModal('modal-od')">
         <img src="/assets/img/od-sofa.jpg" alt="Od"/>
         <div class="info">
           <p><strong>OD</strong> - Lead Guitar</p>
-        </div>
+     </div>
     </div>
 
-    <div class="ember" data-aos="fade-up" data-aos-delay="250">
+    <div class="ember" data-aos="fade-up" data-aos-delay="250" onclick="openModal('modal-ember')">
         <img src="/assets/img/ember-sofa.jpg" alt="Ember"/>
         <div class="info">
           <p><strong>Ember</strong> - Drums</p>
-        </div>
+         </div>
     </div>
 
-    <div class="lyra" data-aos="fade-up" data-aos-delay="350">
+    <div class="lyra" data-aos="fade-up" data-aos-delay="350" onclick="openModal('modal-lyra')"">
         <img src="/assets/img/lyra-sofa.png" alt="Lyra"/>
         <div class="info">
-          <p><strong>Lyra</strong> - Keys</p>
-          
+          <p><strong>Lyra</strong> - Keys</p>          
         </div>
     </div>
-
-<div class="dusk" data-aos="fade-up" data-aos-delay="150">
-        <img src="/assets/img/dusk-sofa.png" alt="Dusk"/>
-        <div class="info">
-            <p><strong>Dusk</strong> - Bass</p>
-                  </div>
-    </div>
-    
+<div class="dusk" data-aos="fade-up" data-aos-delay="150" onclick="openModal('modal-dusk')">
+    <img src="/assets/img/dusk-sofa.png" alt="Dusk"/>
+    <div class="info">
+        <strong>Dusk - Vocal</strong>
+        </div>
+</div>
 </section>
 <section class="band">
   <h1>How we meet?</h1>
@@ -107,6 +104,102 @@
                         </a>
                     </div>
         </footer>
+        <!-- Modal para cada membro -->
+<div id="modal-dusk" class="modal">
+    <div class="modal-content-dusk">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <img src="/assets/img/dusk-sofa.png" alt="Dusk">
+            <div class="modal-info">
+                <h2>Dusk</h2>
+                <h3>Vocalista Principal</h3>
+                <p>História completa sobre Dusk aqui... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sua jornada musical começou aos 15 anos...</p>
+                <h4>Influências Musicais:</h4>
+                <ul>
+                    <li>Chester Bennington</li>
+                    <li>Chris Cornell</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-    </body>
+<div id="modal-trace" class="modal">
+    <div class="modal-content-trace">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <img src="/assets/img/dusk-sofa.png" alt="Dusk">
+            <div class="modal-info">
+                <h2>Dusk</h2>
+                <h3>Vocalista Principal</h3>
+                <p>História completa sobre Dusk aqui... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sua jornada musical começou aos 15 anos...</p>
+                <h4>Influências Musicais:</h4>
+                <ul>
+                    <li>Chester Bennington</li>
+                    <li>Chris Cornell</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-od" class="modal">
+    <div class="modal-content-od">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <img src="/assets/img/dusk-sofa.png" alt="Dusk">
+            <div class="modal-info">
+                <h2>Dusk</h2>
+                <h3>Vocalista Principal</h3>
+                <p>História completa sobre Dusk aqui... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sua jornada musical começou aos 15 anos...</p>
+                <h4>Influências Musicais:</h4>
+                <ul>
+                    <li>Chester Bennington</li>
+                    <li>Chris Cornell</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-ember" class="modal">
+    <div class="modal-content-ember">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <img src="/assets/img/dusk-sofa.png" alt="Dusk">
+            <div class="modal-info">
+                <h2>Dusk</h2>
+                <h3>Vocalista Principal</h3>
+                <p>História completa sobre Dusk aqui... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sua jornada musical começou aos 15 anos...</p>
+                <h4>Influências Musicais:</h4>
+                <ul>
+                    <li>Chester Bennington</li>
+                    <li>Chris Cornell</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-lyra" class="modal">
+    <div class="modal-content-lyra">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <img src="/assets/img/dusk-sofa.png" alt="Dusk">
+            <div class="modal-info">
+                <h2>Dusk</h2>
+                <h3>Vocalista Principal</h3>
+                <p>História completa sobre Dusk aqui... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sua jornada musical começou aos 15 anos...</p>
+                <h4>Influências Musicais:</h4>
+                <ul>
+                    <li>Chester Bennington</li>
+                    <li>Chris Cornell</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Repita para cada membro com IDs diferentes -->
+        <script src="assets/js/script.js"></script>
+    </body>        
 </html>
