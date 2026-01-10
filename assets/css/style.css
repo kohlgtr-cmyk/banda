@@ -440,4 +440,61 @@ footer i:hover {
     transform: translateY(0);
     opacity: 1;
   }
+}
+@media screen and (max-width: 768px) {
+  .full-band {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  .lyra, .od, .trace, .ember, .dusk {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .lyra img, .od img, .trace img, .ember img, .dusk img {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .info {
+    padding: 15px;
+  }
+  .info strong, .info p {
+    font-size: 16px;
+  }
+  .info .descricao {
+    font-size: 13px;
+  }
+  .modal-content {
+    width: 95%;
+    margin: 10% auto;
+  }
+  .modal-body {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .modal-body img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .modal-info h2 {
+    font-size: 24px;
+  }
+  .modal-info h3 {
+    font-size: 16px;
+  }
+  .modal-info p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .lyra img, .od img, .trace img, .ember img, .dusk img {
+    height: 200px;
+  }
+  .info {
+    padding: 10px;
+  }
+  .modal-body {
+    padding: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -223,3 +223,81 @@ footer {
         opacity: 1;
     }
 }
+
+    // Responsivo para tablet e mobile
+@media screen and (max-width: 768px) {
+    .full-band {
+        flex-direction: column; // empilha os cards
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .lyra, .od, .trace, .ember, .dusk {
+        min-width: 100%; // ocupa largura total
+        max-width: 100%;
+        
+        img {
+            height: 250px; // altura fixa para não ficar muito grande
+            object-fit: cover;
+        }
+    }
+    
+    .info {
+        padding: 15px;
+        
+        strong, p {
+            font-size: 16px;
+        }
+        
+        .descricao {
+            font-size: 13px;
+        }
+    }
+    
+    // Modal no mobile
+    .modal-content {
+        width: 95%; // quase tela cheia
+        margin: 10% auto;
+    }
+    
+    .modal-body {
+        flex-direction: column; // imagem em cima, texto embaixo
+        padding: 20px;
+        
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    
+    .modal-info {
+        h2 {
+            font-size: 24px;
+        }
+        
+        h3 {
+            font-size: 16px;
+        }
+        
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+// Responsivo para celulares pequenos
+@media screen and (max-width: 480px) {
+    .lyra, .od, .trace, .ember, .dusk {
+        img {
+            height: 200px; // menor ainda
+        }
+    }
+    
+    .info {
+        padding: 10px;
+    }
+    
+    .modal-body {
+        padding: 15px;
+    }
+}
