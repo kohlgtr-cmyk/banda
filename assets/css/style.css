@@ -289,6 +289,27 @@ footer i:hover {
   }
 }
 /* Modal */
+.modal-images {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+.modal-images img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.modal-images img.active {
+  opacity: 1;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -302,6 +323,8 @@ footer i:hover {
 }
 
 .modal-content-dusk {
+  overflow-y: auto;
+  max-height: 90vh;
   position: relative;
   background-color: #2B2623;
   margin: 5% auto;
@@ -314,6 +337,8 @@ footer i:hover {
 }
 
 .modal-content-lyra {
+  overflow-y: auto;
+  max-height: 90vh;
   position: relative;
   background-color: #242628;
   margin: 5% auto;
@@ -326,6 +351,8 @@ footer i:hover {
 }
 
 .modal-content-ember {
+  overflow-y: auto;
+  max-height: 90vh;
   position: relative;
   background-color: #2D2923;
   margin: 5% auto;
@@ -338,6 +365,8 @@ footer i:hover {
 }
 
 .modal-content-trace {
+  max-height: 90vh;
+  overflow-y: auto;
   position: relative;
   background-color: #1F1C1A;
   margin: 5% auto;
@@ -350,6 +379,8 @@ footer i:hover {
 }
 
 .modal-content-od {
+  max-height: 90vh;
+  overflow-y: auto;
   position: relative;
   background-color: #252822;
   margin: 5% auto;
@@ -363,16 +394,11 @@ footer i:hover {
 
 .modal-body {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
   padding: 40px;
   color: #F1D6A3;
-}
-.modal-body img {
-  width: 300px;
-  height: auto;
-  border-radius: 8px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .modal-info-trace {
@@ -444,7 +470,7 @@ footer i:hover {
 }
 .modal-info-od ul li::before {
   content: "▸ ";
-  color: #E29A4A;
+  color: #39ff88;
 }
 
 .modal-info-ember {
