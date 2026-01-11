@@ -496,3 +496,104 @@ footer {
         padding: 15px;
     }
 }
+.band {
+    text-align: center;
+    color: $text;
+    padding: 40px 20px;
+    border-radius: 8px;
+    
+    h1 {
+        padding: 20px;
+        cursor: pointer;
+        transition: color 0.5s;
+
+        span:hover {
+                border: dotted 2px;
+                border-radius: 12px;
+                padding: 5px;
+                background-color: $fundo-claro;
+                }
+        &:hover {
+            color: $laranja-dourado;
+            transition: 1.5s;
+            transform: scale(1.2)
+            
+        }
+    }
+    
+    img {
+        width: 100%;
+       
+        cursor: pointer;
+        border-radius: 12px;
+        transition: transform 0.3s;
+        
+        &:hover {
+            transform: scale(1.02);
+            transition: 1.5s;
+        }
+    }
+}
+#modal-meet .modal-images {
+    width: 90%;
+    }
+    
+.modal-content-meet {
+    position: relative;
+    margin: 5% auto;
+    padding: 0;
+    width: 80%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 12px;
+    background: $bg-0;
+      box-shadow:
+    0 0 10px $neon-blue-dark,
+    0 0 25px $neon-blue-main,
+    0 0 60px $neon-blue-light;    
+    animation: slideIn 0.4s;
+}
+
+.modal-info-meet {
+    flex: 1;
+    
+    h2 {
+        color: $laranja-dourado;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    h3 {
+        color: $laranja-queimado;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        line-height: 1.8;
+        margin-bottom: 20px;
+        color: $text;
+    }
+    
+    h4 {
+        color: $laranja-dourado;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    ul {
+        list-style: none;
+        padding-left: 0;
+        
+        li {
+            padding: 5px 0;
+            color: $text;
+            
+            &::before {
+                content: "▸ ";
+                color: $laranja-dourado;
+            }
+        }
+    }
+}

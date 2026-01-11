@@ -87,8 +87,8 @@
 </div>
 </section>
 <section class="band">
-  <h1>How we meet?</h1>
-  <img src="/assets/img/full-band.jpeg" alt="full-band">
+  <h1 onclick="openModal('modal-meet')" class="clickable-heading"><span>How we meet?</span></h1>
+  <img src="/assets/img/full-band.jpeg" alt="full-band" onclick="openModal('modal-meet')" class="clickable-image meet-image">
 </section>
         <footer>
             <img src="/assets/img/logo.jpeg" alt="EchoDome Band Logo">
@@ -259,7 +259,41 @@ the echoes of <strong>DUSK</strong> and the screams of <strong>TRACE</strong>.
         </div>
     </div>
 </div>
-<!-- Repita para cada membro com IDs diferentes -->
+<div id="modal-meet" class="modal">
+    <div class="modal-content-meet">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <div class="modal-images">
+                <img src="/assets/img/full-band-1.jpg" alt="Band Meeting" class="active">
+                <img src="/assets/img/full-band.gif" alt="Band Story Video">
+            </div>
+            <div class="modal-info-meet">
+                <h2>How We Met</h2>
+                <h3>The Beginning of EchoDome</h3>
+                <p>
+                    It all started in an abandoned studio on a rainy night in 2023...
+                    <br><br>
+                    TRACE was playing alone when OD walked in, guitar in hand. 
+                    They jammed for hours without saying a word.
+                    <br><br>
+                    EMBER found them through the noise - literally. She was living in the apartment above 
+                    and came down to complain, but ended up joining instead.
+                    <br><br>
+                    LYRA appeared one day, set up her keyboard in the corner, and never left.
+                    <br><br>
+                    DUSK was the last piece. He heard them from the street and knew he had found his home.
+                    <br><br>
+                    We didn't choose each other. The music did.
+                </p>
+                <h4>First Rehearsal Location:</h4>
+                <ul>
+                    <li>Old Studio on 5th Avenue</li>
+                    <li>Now demolished, but forever in our hearts</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
         <script src="assets/js/script.js"></script>
     </body>        
 </html>

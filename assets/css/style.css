@@ -667,4 +667,90 @@ footer i:hover {
   .modal-body {
     padding: 15px;
   }
+}
+.band {
+  text-align: center;
+  color: #F1D6A3;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+.band h1 {
+  padding: 20px;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+.band h1 span:hover {
+  border: dotted 2px;
+  border-radius: 12px;
+  padding: 5px;
+  background-color: #5E6F73;
+}
+.band h1:hover {
+  color: #E29A4A;
+  transition: 1.5s;
+  transform: scale(1.2);
+}
+.band img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+.band img:hover {
+  transform: scale(1.02);
+  transition: 1.5s;
+}
+
+#modal-meet .modal-images {
+  width: 90%;
+}
+
+.modal-content-meet {
+  position: relative;
+  margin: 5% auto;
+  padding: 0;
+  width: 80%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  background: #141c1f;
+  box-shadow: 0 0 10px #118fa6, 0 0 25px #38e1ff, 0 0 60px #8ff1ff;
+  animation: slideIn 0.4s;
+}
+
+.modal-info-meet {
+  flex: 1;
+}
+.modal-info-meet h2 {
+  color: #E29A4A;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.modal-info-meet h3 {
+  color: #C87432;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.modal-info-meet p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #F1D6A3;
+}
+.modal-info-meet h4 {
+  color: #E29A4A;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.modal-info-meet ul {
+  list-style: none;
+  padding-left: 0;
+}
+.modal-info-meet ul li {
+  padding: 5px 0;
+  color: #F1D6A3;
+}
+.modal-info-meet ul li::before {
+  content: "▸ ";
+  color: #E29A4A;
 }/*# sourceMappingURL=style.css.map */
